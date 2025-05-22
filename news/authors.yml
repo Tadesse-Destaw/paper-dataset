@@ -1,0 +1,23 @@
+simone:
+  name: Simone Conia
+  title: Assistant Professor @ Sapienza University of Rome
+  url: https://www.linkedin.com/in/simone-conia/
+  image_url: https://github.com/c-simone.png
+
+min:
+  name: Min Li
+  title: Senior AIML Engineer and Scientist @ Apple
+  url: https://www.linkedin.com/in/min-li-27b13119/
+  image_url: https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=rABgwqkAAAAJ&citpid=2
+
+saloni:
+  name: Saloni Potdar
+  title: Senior AIML Manager @ Apple
+  url: https://www.linkedin.com/in/saloni-potdar/
+  image_url: https://salonipotdar.github.io/public/data/profile.jpg
+
+roberto:
+  name: Roberto Navigli
+  title: Full Professor @ Sapienza University of Rome
+  url: https://www.linkedin.com/in/robertonavigli/
+  image_url: https://github.com/navigli.png

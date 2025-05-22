@@ -1,49 +1,57 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Task Documentation',
+    image: "img/documents.png",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Read the task description, download the data, and learn how to submit your results!
       </>
     ),
+    link: '/docs/task/introduction'
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'News & Updates',
+    image: "img/newspaper.png",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Stay up-to-date with the latest news and updates about the task!
       </>
     ),
+    link: '/news'
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Stay Connected',
+    image: "img/network.png",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Join the community and stay connected with other participants!
       </>
     ),
+    link: 'https://groups.google.com/a/uniroma1.it/g/semeval-2025-task-2-ea-mt'
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({image, title, description, link}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4')} style={{margin: "2rem 0rem"}}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={image} alt={title} style={{width: "30%", height: "30%", margin: "1rem"}} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+      </div>
+      <div className="text--center">
+        <Link
+          className={clsx("button button--secondary", styles.taskButton)}
+          to={link}>
+          🔍 Read More
+        </Link>
       </div>
     </div>
   );
@@ -52,12 +60,14 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container" style={{marginTop: "-2rem"}}>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
+        <br/>
+        <hr/>
       </div>
     </section>
   );
