@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpaper_dataset=self.webpackChunkpaper_dataset||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/paper-dataset/blog","blogTitle":"Blog","authorsListPath":"/paper-dataset/blog/authors"}')}}]);
